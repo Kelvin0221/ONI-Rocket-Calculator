@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rocktcalculator.onirocketcalculator.InformationViewController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <tabs>
+          <Tab text="Assumptions">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lbl_assumptions" layoutX="14.0" layoutY="14.0" text="Assumptions" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Disclaimer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lbl_disclaimer" layoutX="14.0" layoutY="14.0" text="Disclaimer" wrapText="true" />
+                        <Hyperlink layoutX="78.0" layoutY="306.0" text="https://github.com/Kelvin0221/ONI-Rocket-Calculator" />
+                        <Label layoutX="14.0" layoutY="309.0" text="Github Link:" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
