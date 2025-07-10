@@ -19,3 +19,5 @@ The application is provided "as is," without any express or implied warranties.
 This application DOES NOT guarantee it will be error-free, secure, or meet your specific needs.
 
 Please read "Disclaimer section within the application for further informations.
+
+NOTE: To see or verify formula, you can refer to ONI Rocket Calc List.xlsx.
