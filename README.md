@@ -12,6 +12,8 @@ Assumptions:
 - This calculator tries to calculate the most optimal fuel requirements in least iterations.
 - Parameters are already known to apply to the calculator.
 
+The intention for develop this application is simply because of I was bored and ToolsNotIncluded website was downed. I can't find any replacement at that moment.
+
 This application is for non-commercial, personal use only.
 It is not affiliated with Klei Entertainment or any related entities.
                 
