@@ -1,11 +1,20 @@
 package com.rocktcalculator.onirocketcalculator;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
+
+import java.awt.*;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 public class InformationViewController {
     @FXML Label lbl_assumptions;
     @FXML Label lbl_disclaimer;
+    @FXML Hyperlink link_git;
 
     @FXML
     protected void initialize(){
@@ -49,5 +58,15 @@ public class InformationViewController {
 
         lbl_assumptions.setText(strAssumptions);
         lbl_disclaimer.setText(strDisclaimer);
+
+
+    }
+
+    @FXML public void openLink(){
+        try{
+            Desktop.getDesktop().browse(new URL("https://github.com/Kelvin0221/ONI-Rocket-Calculator").toURI());
+        } catch (URISyntaxException | IOException e) {
+            e.printStackTrace();
+        }
     }
 }
