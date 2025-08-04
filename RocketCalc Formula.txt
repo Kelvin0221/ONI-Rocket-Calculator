@@ -1,0 +1,49 @@
+R -> CC - Cargo x2 - LOX - Petrol x3 - Eng
+
+WPenalty - Rocket = 4800 Fuel = ? 
+
+Thrust = 40km/kg * 1.33
+Thrust = 53.2
+
+Dest = 30000
+FWeight = induvidual fuel weight
+
+Dest = FWeight*Thrust - ((RWeight + 2FWeight)/300) ^ 3.2
+Dest = FWeight*Thrust - (RWeight/300) ^ 3.2 - (2FWeight/300) ^ 3.2
+
+
+Dest = 30000
+Thrust = 53.2
+RWeight = 4800
+
+30000 = 53.2x - 7132 - (2x/300) ^ 3.2
+0 = 53.2x - 37132 - (2x/300) ^ 3.2
+
+53.2x - 37132 = (2x/300) ^ 3.2
+53.2x - 37132 = 9.2x^3.2/84486635.4
+84486635.4(53.2x - 37132) = 9.2x^3.2
+9183330(53.2x - 37132) = x^3.2
+488553156x - 340995409600 = x^3.2
+f(x) = x^3.2 - 488553156x + 340995409600
+
+
+Dest = FWeight*Thrust - WeightPenalty
+Dest = FWeight*Thrust - MAX(RWeight, (RWeight/300)^3.2)
+Dest = FWeight*Thrust - ((RWeight + 2FWeight)/300) ^ 3.2
+Dest = FWeight*Thrust - (RWeight/300) ^ 3.2 - (2FWeight/300) ^ 3.2
+
+InitFWeight = (Dest + (RWeight/300) ^ 3.2)/Thrust
+->
+Dest = 30000
+Thrust = 53.2
+RWeight = 4800
+InitFWeight = (30000 + (4800/300)^3.2)/53.2
+Approx. 698
+
+RWeight = 4800 + 698 = 5498
+InitFWeight = (30000 + (5498/300)^3.2)/53.2
+Approx. 771
+
+RWeight = 4800 + 771 = 5571
+InitFWeight = (30000 + (5571/300)^3.2)/53.2
+Approx. 771
